@@ -25,8 +25,7 @@ function awaitpl(){
 function load_exploit(){
     document.getElementById('notify').style.display = ''
     document.getElementById('notify').className = 'notification'
-    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Loading Exfathax..Please Wait !!!</h1>'; }, 50);
-    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Insert Usb Now !!!...</h1>'; }, 800);
+    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Loading Exfathax..Please Wait !!!</h1>'; }, 50);       
     setTimeout(webkitExploit,1000);  
 }
 
@@ -48,7 +47,7 @@ function loadHomeBrew() {
     }else {
         document.getElementById('notify').style.display = ''
         document.getElementById('notify').className = 'notification'
-        setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Jailbreak Done, Now Unplug USB!!!</h1>'; }, 50);   
+        setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Jailbreak Done, Now load HEN Manually!!!</h1>'; }, 50);   
         setTimeout(ani2, 4000);
     }
 }
@@ -56,8 +55,9 @@ function loadHomeBrew() {
 function load_usb(){
     document.getElementById('notify').style.display = ''
     document.getElementById('notify').className = 'notification'
-    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Insert Usb Now !!!...</h1>'; }, 50);
-    setTimeout(ani2, 4000);
+    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Insert Usb Now !!!...</h1>'; }, 3000);
+    setTimeout(function(){document.getElementById("log").innerHTML="<h1 style=color:#ebfa89>Unplug Usb Now !!!...</h1>"; }, 3000);
+    setTimeout(ani2, 6000);
 }       
 
 function autopl(){
