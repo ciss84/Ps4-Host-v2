@@ -25,7 +25,8 @@ function awaitpl(){
 function load_exploit(){
     document.getElementById('notify').style.display = ''
     document.getElementById('notify').className = 'notification'
-    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Loading Exfathax..Please Wait !!!</h1>'; }, 50);       
+    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Loading Exfathax..Please Wait !!!</h1>'; }, 50);
+    setTimeout(function(){document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Insert Usb Now !!!...</h1>'; }, 800);
     setTimeout(webkitExploit,1000);  
 }
 
