@@ -56,10 +56,10 @@ function load_usb(){
     document.getElementById('notify').style.display = ''
     document.getElementById('notify').className = 'notification'
     document.getElementById('log').innerHTML ='<h1 style=color:#ebfa89>*Insert Usb Now !!!...</h1>'
-    setTimeout(unplugmsg, 10000);
+    setTimeout(unplugmsg, 4000);
     function unplugmsg(){
         document.getElementById("log").innerHTML="<h1 style=color:#ebfa89>Unplug Usb Now !!!...</h1>"
-        setTimeout(ani2, 6000);
+        setTimeout(ani2, 4000);
     }
 }       
 
