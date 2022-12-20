@@ -11,7 +11,7 @@ var HAMMER_NSTRINGS = 700; //tweak this if crashing during hammer time
 
 function poc() {
 StartTimer();
-Jailbreak();
+Jailbreak()
 function hex(n)
 {
     if((typeof n) != "number")
