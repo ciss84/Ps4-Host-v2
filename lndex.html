@@ -228,7 +228,7 @@ input:checked + .slider .off
 <script src="rop.js"></script>
 <script src="kexploit.js"></script>
 <script src="webkit.js"></script>
-<body onload="poc()">
+<body onload="run()">
 <div id="jb-progress">
     <div id="notify" style="display: none;">
         <img src="./hen.png" alt="" width="100px" height="100px">
@@ -340,6 +340,13 @@ PS4fw.innerHTML=""+UA+" Binloader";
       document.getElementById("autousbbox").checked = true
   }else {
       document.getElementById("autousbbox").checked = false
+  }
+</script>
+<script>
+  function run() {
+    ShowMSG = "Preparing for Exploit!"
+    loadmsg()
+    setTimeout(poc, 5000)
   }
 </script>
 </body>
