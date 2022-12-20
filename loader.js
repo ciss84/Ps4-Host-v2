@@ -1,3 +1,4 @@
+        var usbWaitTime = sessionStorage.getItem('waittime');
 
         if (!usbWaitTime){
             usbWaitTime = 5000; //default if empty
