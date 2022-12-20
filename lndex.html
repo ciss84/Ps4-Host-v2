@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html><head>
-<title>Host Manual Usb ∆❍X❑(FW 9.00)v1</title>
+<title>ESP8266 Manual Usb ∆❍X❑(FW 9.00)v1</title>
 <link rel="stylesheet prefetch" href="Style.css">
 <style>
 html,html, body {
-//background-image: url('img.jpg');
 background-size: 100%;
 background-repeat: no-repeat;
-//background-color: #24272b;
 color: white;
 text-align: center;
 margin: 0px;
@@ -230,27 +228,31 @@ input:checked + .slider .off
 <script src="rop.js"></script>
 <script src="kexploit.js"></script>
 <script src="webkit.js"></script>
-<body onload="load_exploit(); load()">
+<body onload="poc()">
 <div id="jb-progress">
-    <div id="notify" style="display: ;">
+    <div id="notify" style="display: none;">
         <img src="./hen.png" alt="" width="100px" height="100px">
         <p id="log"></p>
     </div>	
 
-<h1 id="msgs" style="margin-top:30px;color:#e5e4e2">Host Manual Usb (FW 9.00)</h1>
+<h1 id="msgs" style="margin-top:30px;color:#e5e4e2">ESP8266 Auto & Manual Host for FW 9.00</h1>
 <h1 id=msgs2 style='font-size:25px;text-align:center;color:#e5e4e2;'>∆❍X❑</h1>
-
-<div style='margin-top:10px;font-size:20px;text-align:center;color:#e5e4e2;'><B>PlatinumHen/GoldHen</B></div>
 <label class="switch">
-  <input type="checkbox" id="checkbox1" onclick="checkthebox1()">
+  <input type="checkbox" id="autoPhenbox" onclick="checkthebox()">
   <span class="slider round"><span class="on">AutoLoadPHEN ON</span><span class="off">AutoLoadPHEN OFF</span></span>
 </label>
-<button style='margin-top:5px;font-size:22px;text-align:center;color:#4863A0;background-color: #e5e4e2;' class="pointer" onclick=load_platinum() onMouseOver="msgs2.innerHTML='PlatinumHen 2.5 Beta Unofficial by 84Ciss'" ; onmouseout="msgs2.innerHTML='∆❍X❑'" type="button"><B>Platinum 2.5b </B></button></a>
-<button style='font-size:22px;text-align:center;color:white;background-color: goldenrod;' class="pointer" onclick=load_goldhen2b2() onMouseOver="msgs2.innerHTML='GoldHEN 2.2.5b8 by SISTRo'" ; onmouseout="msgs2.innerHTML='∆❍X❑'" type="button"><B>GoldHen 2.2.5b8 </B></button></a>
 <label class="switch">
-  <input type="checkbox" id="checkbox2" onclick="checkthebox2()">
+  <input type="checkbox" id="autoGhenbox" onclick="checkthebox0()">
   <span class="slider round"><span class="on">AutoLoadGHEN ON</span><span class="off">AutoLoadGHEN OFF</span></span>
 </label>
+<label class="switch">
+  <input type="checkbox" id="autousbbox" onclick="checkthebox1()">
+  <span class="slider round"><span class="on">AutoUSB ON</span><span class="off">AutoUSB OFF</span></span>
+</label>
+<hr style="opacity: 50%;width: 90%;margin-left: 5%;margin-right: 5%;">
+<div style='margin-top:10px;font-size:20px;text-align:center;color:#e5e4e2;'><B>PlatinumHen/GoldHen</B></div>
+<button style='margin-top:5px;font-size:22px;text-align:center;color:#4863A0;background-color: #e5e4e2;' class="pointer" onclick=load_platinum() onMouseOver="msgs2.innerHTML='PlatinumHen 2.5 Beta Unofficial by 84Ciss'" ; onmouseout="msgs2.innerHTML='∆❍X❑'" type="button"><B>Platinum 2.5b </B></button></a>
+<button style='font-size:22px;text-align:center;color:white;background-color: goldenrod;' class="pointer" onclick=load_goldhen2b2() onMouseOver="msgs2.innerHTML='GoldHEN 2.2.5b8 by SISTRo'" ; onmouseout="msgs2.innerHTML='∆❍X❑'" type="button"><B>GoldHen 2.2.5b8 </B></button></a>
 <br>
 <div style='margin-top:15px;font-size:20px;text-align:center;color:#e5e4e2;'><B>Mods</B></div>
 <button style='margin-top:5px;font-size:20px;text-align:center;color:#FFFFFF' class="pointer" onclick=load_gtabeef138() onMouseOver="msgs2.innerHTML='Gta V BeefQueef Mod Menu 1.38d'" ; onmouseout="msgs2.innerHTML='∆❍X❑'" type="button"><B> GtaV Beef 1.38d </B></button></a>
@@ -273,13 +275,16 @@ input:checked + .slider .off
 <button style='font-size:20px;text-align:center;color:#FFFFFF' class="pointer" onclick=load_linux4gbp() onmouseover="msgs2.innerHTML='Load Linux Pro 4GB VRAM'" ; onmouseout="msgs2.innerHTML='∆❍X❑'" type="button"><B> Linux 4GB P</B></button></a>
 <br>
 <button style="margin-top:15px;background-color:#781f1f;border-radius:50px;" onclick=load_bin() type="button">
-FW- <span id="PS4fw"></span><br>Ps4- <span id="onlineCheckResult"></span></button>
+FW- <span id="PS4fw"></span></button>
 <br><br>
 <div class="about2" style='margin-right:75px'><a href="theme.html" target="_blank" rel="noopener noreferrer"><button id = "enter" style='font-size:20px;text-align:center;color:#FFFFFF' class="pointer" onMouseOver="msgs2.innerHTML='Change Wallpaper'" ; onmouseout="msgs2.innerHTML='∆❍X❑'" type="button"><B>Themes</B></button></a></div>
+<div class="about" style='margin-left:75px'><a href="" target="_blank" rel="noopener noreferrer"><button id = "enter" style='font-size:20px;text-align:center;color:#FFFFFF' class="pointer" onMouseOver="msgs2.innerHTML='∆❍X❑'" ; onmouseout="msgs2.innerHTML='∆❍X❑'" type="button"><B>∆❍X❑</B></button></a></div>
+<div class="about" style='margin-left:550px'><a href="http://192.168.1.1/admin.html" target="_blank" rel="noopener noreferrer"><button style='font-size:20px;text-align:center;color:#FFFFFF' class="pointer" onMouseOver="msgs2.innerHTML='EPS32-S2 Setting'" ; onmouseout="msgs2.innerHTML='∆❍X❑'" type="button"><B>Setting ESP</B></button></a></div>
+<div class="about" style='margin-left:75px'><a href="http://192.168.1.240/admin.html" target="_blank" rel="noopener noreferrer"><button style='font-size:20px;text-align:center;color:#FFFFFF' class="pointer" onMouseOver="msgs2.innerHTML='PC Online EPS32-S2 Setting'" ; onmouseout="msgs2.innerHTML='∆❍X❑'" type="button"><B>Setting STA PC</B></button></a></div>
 <br><br>
 <div style="background-color:#032140;color:white;position:fixed;left:0;bottom:-0px;width:100%;text-align:center;">
 <font style='color:#87FF33'>Modder & Dev : </font>Son84Goku - Find Me In Tweeter if you have any kind of issues !&nbsp;<a href="https://twitter.com/84Ciss" style='font-size:20px;text-align:center;color:yellow;'>@Son84Goku</a>
-<br><font style='color:#87FF33'>Special thanks : </font>*Many Many Thanks to all Contributors in PS4 Scene ∆❍X❑*
+<br><font style='color:#87FF33'>Special thanks to: @bishalqx980 </font>*Many Many Thanks to all Contributors in PS4 Scene ∆❍X❑*
 </div>
 
 <script>
@@ -318,66 +323,24 @@ PS4fw.innerHTML=""+UA+" Binloader";
  }
 </script>
 <script>
-  // Onload Check
-  var firstcheck = localStorage.getItem("CheckBOX1")
-  if (firstcheck == "true"){
-    document.getElementById("checkbox1").checked = true
+  var checkboxcheck = localStorage.getItem("CheckBox")
+  var checkboxcheck0 = localStorage.getItem("CheckBox0")
+  var checkboxcheck1 = localStorage.getItem("CheckBox1")
+  if (checkboxcheck == "true") {
+      document.getElementById("autoPhenbox").checked = true
   }else {
-    document.getElementById("checkbox1").checked = false
+      document.getElementById("autoPhenbox").checked = false
   }
-  var secondcheck = localStorage.getItem("CheckBOX2")
-  if (secondcheck == "true"){
-    document.getElementById("checkbox2").checked = true
+  if (checkboxcheck0 == "true") {
+      document.getElementById("autoGhenbox").checked = true
   }else {
-    document.getElementById("checkbox2").checked = false
+      document.getElementById("autoGhenbox").checked = false
   }
-  // Button Event
-  function checkthebox1() {
-    var chkBox = document.getElementById("checkbox1")
-    if (chkBox.checked == true){
-      var checkbox_on = document.getElementById("checkbox1").checked = true
-      localStorage.setItem("CheckBOX1", checkbox_on)
-      LoadedMSG="PlatinumHEN Auto ON  !!!";
-      autopl();
-    }else if (chkBox.checked == false) {
-      var checkbox_off = document.getElementById("checkbox1").checked = false
-      localStorage.setItem("CheckBOX1", checkbox_off)
-      LoadedMSG="PlatinumHEN Auto OFF !!!";
-      autopl();
-    }
+  if (checkboxcheck1 == "true") {
+      document.getElementById("autousbbox").checked = true
+  }else {
+      document.getElementById("autousbbox").checked = false
   }
-  function checkthebox2() {
-    var chkBox = document.getElementById("checkbox2")
-    if (chkBox.checked == true){
-      var checkbox_on = document.getElementById("checkbox2").checked = true
-      localStorage.setItem("CheckBOX2", checkbox_on)
-      LoadedMSG="GoldHEN Auto ON  !!!";
-      autopl();
-    }else if (chkBox.checked == false) {
-      var checkbox_off = document.getElementById("checkbox2").checked = false
-      localStorage.setItem("CheckBOX2", checkbox_off)
-      LoadedMSG="GoldHEN Auto OFF  !!!";
-      autopl();
-    }
-  }
-</script>
-<script>
-function load() {
-    onlineChk();sysinfo()
-}
-
-function onlineChk() {
-    var check = navigator.onLine
-    if (check == true) {
-        document.getElementById("onlineCheckResult").innerHTML = "Online"
-    }else {
-        document.getElementById("onlineCheckResult").innerHTML = "Offline"
-    }
-}
-
-function sysinfo() {
-    document.getElementById("sysinfo").innerHTML = navigator.userAgent
-}
 </script>
 </body>
 </html>
