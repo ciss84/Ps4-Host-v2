@@ -1,6 +1,6 @@
 
         if (!usbWaitTime){
-            usbWaitTime = 10000; //default if empty
+            usbWaitTime = 5000; //default if empty
         }
         function loadBIN(){
             var xhr = new XMLHttpRequest();
