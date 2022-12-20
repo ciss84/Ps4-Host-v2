@@ -228,7 +228,7 @@ input:checked + .slider .off
 <script src="rop.js"></script>
 <script src="kexploit.js"></script>
 <script src="webkit.js"></script>
-<body onload="run()">
+<body onload="poc()">
 <div id="jb-progress">
     <div id="notify" style="display: none;">
         <img src="./hen.png" alt="" width="100px" height="100px">
@@ -237,22 +237,17 @@ input:checked + .slider .off
 
 <h1 id="msgs" style="margin-top:30px;color:#e5e4e2">ESP8266 Auto & Manual Host for FW 9.00</h1>
 <h1 id=msgs2 style='font-size:25px;text-align:center;color:#e5e4e2;'>∆❍X❑</h1>
-<label class="switch">
-  <input type="checkbox" id="autoPhenbox" onclick="checkthebox()">
-  <span class="slider round"><span class="on">AutoLoadPHEN ON</span><span class="off">AutoLoadPHEN OFF</span></span>
-</label>
+<div style='margin-top:10px;font-size:20px;text-align:center;color:#e5e4e2;'><B>PlatinumHen/GoldHen</B></div>
 <label class="switch">
   <input type="checkbox" id="autoGhenbox" onclick="checkthebox0()">
   <span class="slider round"><span class="on">AutoLoadGHEN ON</span><span class="off">AutoLoadGHEN OFF</span></span>
 </label>
-<label class="switch">
-  <input type="checkbox" id="autousbbox" onclick="checkthebox1()">
-  <span class="slider round"><span class="on">AutoUSB ON</span><span class="off">AutoUSB OFF</span></span>
-</label>
-<hr style="opacity: 50%;width: 90%;margin-left: 5%;margin-right: 5%;">
-<div style='margin-top:10px;font-size:20px;text-align:center;color:#e5e4e2;'><B>PlatinumHen/GoldHen</B></div>
 <button style='margin-top:5px;font-size:22px;text-align:center;color:#4863A0;background-color: #e5e4e2;' class="pointer" onclick=load_platinum() onMouseOver="msgs2.innerHTML='PlatinumHen 2.5 Beta Unofficial by 84Ciss'" ; onmouseout="msgs2.innerHTML='∆❍X❑'" type="button"><B>Platinum 2.5b </B></button></a>
 <button style='font-size:22px;text-align:center;color:white;background-color: goldenrod;' class="pointer" onclick=load_goldhen2b2() onMouseOver="msgs2.innerHTML='GoldHEN 2.2.5b8 by SISTRo'" ; onmouseout="msgs2.innerHTML='∆❍X❑'" type="button"><B>GoldHen 2.2.5b8 </B></button></a>
+<label class="switch">
+  <input type="checkbox" id="autoPhenbox" onclick="checkthebox()">
+  <span class="slider round"><span class="on">AutoLoadPHEN ON</span><span class="off">AutoLoadPHEN OFF</span></span>
+</label>
 <br>
 <div style='margin-top:15px;font-size:20px;text-align:center;color:#e5e4e2;'><B>Mods</B></div>
 <button style='margin-top:5px;font-size:20px;text-align:center;color:#FFFFFF' class="pointer" onclick=load_gtabeef138() onMouseOver="msgs2.innerHTML='Gta V BeefQueef Mod Menu 1.38d'" ; onmouseout="msgs2.innerHTML='∆❍X❑'" type="button"><B> GtaV Beef 1.38d </B></button></a>
@@ -281,6 +276,10 @@ FW- <span id="PS4fw"></span></button>
 <div class="about" style='margin-left:75px'><a href="" target="_blank" rel="noopener noreferrer"><button id = "enter" style='font-size:20px;text-align:center;color:#FFFFFF' class="pointer" onMouseOver="msgs2.innerHTML='∆❍X❑'" ; onmouseout="msgs2.innerHTML='∆❍X❑'" type="button"><B>∆❍X❑</B></button></a></div>
 <div class="about" style='margin-left:550px'><a href="http://192.168.1.1/admin.html" target="_blank" rel="noopener noreferrer"><button style='font-size:20px;text-align:center;color:#FFFFFF' class="pointer" onMouseOver="msgs2.innerHTML='EPS32-S2 Setting'" ; onmouseout="msgs2.innerHTML='∆❍X❑'" type="button"><B>Setting ESP</B></button></a></div>
 <div class="about" style='margin-left:75px'><a href="http://192.168.1.240/admin.html" target="_blank" rel="noopener noreferrer"><button style='font-size:20px;text-align:center;color:#FFFFFF' class="pointer" onMouseOver="msgs2.innerHTML='PC Online EPS32-S2 Setting'" ; onmouseout="msgs2.innerHTML='∆❍X❑'" type="button"><B>Setting STA PC</B></button></a></div>
+<label class="switch">
+  <input type="checkbox" id="autousbbox" onclick="checkthebox1()">
+  <span class="slider round"><span class="on">AutoUSB ON</span><span class="off">AutoUSB OFF</span></span>
+</label>
 <br><br>
 <div style="background-color:#032140;color:white;position:fixed;left:0;bottom:-0px;width:100%;text-align:center;">
 <font style='color:#87FF33'>Modder & Dev : </font>Son84Goku - Find Me In Tweeter if you have any kind of issues !&nbsp;<a href="https://twitter.com/84Ciss" style='font-size:20px;text-align:center;color:yellow;'>@Son84Goku</a>
@@ -340,13 +339,6 @@ PS4fw.innerHTML=""+UA+" Binloader";
       document.getElementById("autousbbox").checked = true
   }else {
       document.getElementById("autousbbox").checked = false
-  }
-</script>
-<script>
-  function run() {
-    ShowMSG = "Preparing for Exploit!"
-    loadmsg()
-    setTimeout(poc, 3000)
   }
 </script>
 </body>
