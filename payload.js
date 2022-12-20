@@ -3,6 +3,7 @@
             document.getElementById('notify').style.display = ''
             document.getElementById('notify').className = 'notification'
             document.getElementById('log').innerHTML = ShowMSG
+            setTimeout(ani2, 6000)
         }
         function ani2() {
             document.getElementById('notify').className = 'notification2'
